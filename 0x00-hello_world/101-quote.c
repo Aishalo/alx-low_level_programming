@@ -1,17 +1,13 @@
 #include <stdio.h>
+#include <unistd.h>
 
 /**
- * main - The body
- * We use a different type of header
- * Return: 1 for reasons yet discovered
+ * main - Entry
+ * Return: 1 
  */
 
 int main(void)
 {
-	char err[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-
-	write(2, err, 59);
-
+	write(1, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 
-}
